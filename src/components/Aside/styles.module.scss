@@ -1,0 +1,16 @@
+.container {
+  width: 40%;
+  height: 100vh;
+  overflow: auto;
+  padding: 1rem;
+  background-color: #e7e7e7;
+}
+.calendar {
+  background-color: #ffffff;
+}
+.container_accordion {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
