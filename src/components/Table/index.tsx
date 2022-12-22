@@ -2,31 +2,38 @@ import { Table } from 'react-bootstrap';
 
 export default function NoticesAndStickyNotes() {
   return (
-    <Table striped bordered responsive>
+    <Table bordered responsive>
       <thead>
         <tr>
-          <th>#</th>
-          {Array.from({ length: 12 }).map((_, index) => (
-            <th key={index}>Table heading</th>
+          {Array.from({ length: 7 }).map((_, index) => (
+            <th key={index} style={{ backgroundColor: '#e7e7e7' }}>
+              Coluna {index}
+            </th>
           ))}
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          {Array.from({ length: 12 }).map((_, index) => (
+          <td>
+            <input type="checkbox" />
+          </td>
+          {Array.from({ length: 6 }).map((_, index) => (
             <td key={index}>Table cell {index}</td>
           ))}
         </tr>
         <tr>
-          <td>2</td>
-          {Array.from({ length: 12 }).map((_, index) => (
+          <td>
+            <input type="checkbox" />
+          </td>
+          {Array.from({ length: 6 }).map((_, index) => (
             <td key={index}>Table cell {index}</td>
           ))}
         </tr>
         <tr>
-          <td>3</td>
-          {Array.from({ length: 12 }).map((_, index) => (
+          <td>
+            <input type="checkbox" />
+          </td>
+          {Array.from({ length: 6 }).map((_, index) => (
             <td key={index}>Table cell {index}</td>
           ))}
         </tr>

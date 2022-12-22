@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 102px);
+  overflow-y: auto;
+  padding: 1rem;
+  h1 {
+    font-size: 2rem;
+  }
+  div {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
