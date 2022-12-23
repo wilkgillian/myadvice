@@ -7,6 +7,48 @@
     margin-top: 1.5rem;
     svg {
       font-size: x-large;
+      &:hover {
+        color: rgb(0, 149, 255);
+      }
     }
+  }
+  div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    a {
+      margin: auto;
+      color: #525252;
+    }
+    svg {
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin: auto;
+      &:hover {
+        color: rgb(0, 149, 255);
+      }
+    }
+  }
+}
+.content {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #525252;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s;
+    &:hover {
+      color: rgb(0, 149, 255);
+    }
+  }
+  svg {
+    font-size: 2rem;
   }
 }

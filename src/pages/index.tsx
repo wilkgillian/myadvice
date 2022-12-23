@@ -12,7 +12,6 @@ export default function Home() {
       <Aside>
         <NextSchedules />
       </Aside>
-      {/* <Button>Botão</Button> */}
     </div>
   );
 }

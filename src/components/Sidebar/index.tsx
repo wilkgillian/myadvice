@@ -1,6 +1,10 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import { Button, Offcanvas } from 'react-bootstrap';
 import { AiOutlineDoubleRight } from 'react-icons/ai';
+import { FiCalendar } from 'react-icons/fi';
+import { IoIosAddCircle } from 'react-icons/io';
+import { MdOutlineMedicalServices } from 'react-icons/md';
 import styles from './styles.module.scss';
 
 export default function SideBar() {
@@ -14,14 +18,48 @@ export default function SideBar() {
       <Button variant="none" onClick={handleShow}>
         <AiOutlineDoubleRight />
       </Button>
-
+      <div>
+        <Link passHref href="/Scheduling">
+          <a>
+            <FiCalendar />
+          </a>
+        </Link>
+        <Link passHref href="/Cadastro">
+          <a>
+            <IoIosAddCircle />
+          </a>
+        </Link>
+        <Link passHref href="/Consults">
+          <a>
+            <MdOutlineMedicalServices />
+          </a>
+        </Link>
+      </div>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <div className={styles.content}>
+            <Link as="div" passHref href="/Scheduling">
+              <a>
+                <FiCalendar />
+                Agendamentos
+              </a>
+            </Link>
+            <Link passHref href="/Cadastro">
+              <a>
+                <IoIosAddCircle />
+                Agendamentos
+              </a>
+            </Link>
+            <Link passHref href="/Consults">
+              <a>
+                <MdOutlineMedicalServices />
+                Consultas agendadas
+              </a>
+            </Link>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </div>

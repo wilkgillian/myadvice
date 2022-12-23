@@ -29,30 +29,19 @@ const options = {
     enabled: false
   },
   xaxis: {
-    type: 'datetime',
     axisBorder: {
       color: 'black'
     },
     axisTicks: {
       color: 'black'
     },
-    categories: [
-      '2022-12-18T08:00:00.000Z',
-      '2022-12-18T09:00:00.000Z',
-      '2022-12-18T10:00:00.000Z',
-      '2022-12-18T11:00:00.000Z',
-      '2022-12-18T12:00:00.000Z',
-      '2022-12-18T14:00:00.000Z',
-      '2022-12-18T15:00:00.000Z'
-    ]
+    categories: ['08:00', '09:00', '10:00', '11:00', '12:00', '14:00', '15:00']
   },
   fill: {
     opacity: 0.3,
     type: 'gradient',
     gradient: {
-      shade: 'dark',
-      opacityFrom: 0.7,
-      opacityTo: 0.3
+      shade: 'dark'
     }
   }
 };
