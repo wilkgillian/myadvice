@@ -7,11 +7,19 @@ interface AddMedicalProps {
   };
 }
 
-export function addMedical({ data }: AddMedicalProps) {
+export async function addConsult({ data }: AddMedicalProps) {
+  let consults: [] = [];
+  let consult = [];
+  if (localStorage.consultas) {
+    consults = await JSON.parse(localStorage.consultas);
+    //Parei aqui
+  }
   const dados = {
-    consultas: [data]
+    name: data.name,
+    description: data.description
   };
-  localStorage.setItem('consultas', JSON.stringify(dados));
+  consult.push(dados);
+  localStorage.setItem('consultas', JSON.stringify(consults.push(consult)));
 }
 
 // export const medicalSlice = createSlice({

@@ -6,15 +6,9 @@ import styles from './styles.module.scss';
 
 export default function SchedulingItem() {
   const [dataExists, setDataExists] = useState(false);
-  const medical = {
-    data: {
-      name: 'pedrinho',
-      crm: 2
-    }
-  };
 
-  const dados = localStorage.getItem('medicos');
-  console.log(typeof dados);
+  // const dados = localStorage.getItem('consultas');
+  // console.log(typeof dados);
   return (
     <div className={styles.container}>
       <span>08:00</span>

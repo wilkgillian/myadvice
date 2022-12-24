@@ -1,9 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit';
-import medicalsReducer from '../utils';
-import { addMedical } from '../utils';
+import { createStore } from 'redux';
 
-export default configureStore({
-  reducer: {
-    medicals: medicalsReducer
-  }
-});
+function reducer() {
+  return [
+    {
+      id: 1,
+      name: 'Diego',
+      description: 'Dor de cabeça'
+    }
+  ];
+}
+
+const store = createStore(reducer);
+
+export default store;
